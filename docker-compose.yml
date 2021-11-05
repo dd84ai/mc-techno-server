@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: dockerfile
+    tty: true
+    volumes:
+      - ./data/asm:/app/asm
+      - ./data/world:/app/world
+      - ./data/config:/app/config
+      - ./data/crash-reports:/app/crash-reports
+      - ./data/logs:/app/logs
+
+      - ./help.yml:/app/help.yml
+      - ./commands.yml:/app/commands.yml
+      - ./ops.json:/app/ops.json
+      - ./permissions.yml:/app/permissions.yml
+      - ./spigot.yml:/app/spigot.yml
+      - ./tileentities.yml:/app/tileentities.yml
+      - ./usercache.json:/app/usercache.json
+      - ./usernamecache.json:/app/usernamecache.json
+      - ./wepif.yml:/app/wepif.yml
+      - ./whitelist.json:/app/whitelist.json
+      - ./banned-players.json:/app/banned-players.json
+      - ./banned-ips.json:/app/banned-ips.json
+    restart: always
+    ports:
+      - 25565:25565
