@@ -1,9 +1,8 @@
 # dependencies for client and server:
 
-Tested in Kubuntu 20.04
+- install docker-compose and run
 
-- sudo apt-get install openjdk-8-jre
-- sudo apt-get install openjfx
+- docker-compose up -d
 
 # running client
 
