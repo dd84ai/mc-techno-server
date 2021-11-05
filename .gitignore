@@ -1,0 +1,13 @@
+asm/
+config/
+crash-reports/
+logs/
+plugins/LoginSecurity/
+plugins/PluginMetrics
+plugins/Updated
+plugins/WorldEdit
+plugins/WorldGuard
+stable-mods/
+world/
+*.json
+*.yml
