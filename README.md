@@ -22,3 +22,7 @@ for logins:
 
 - /register password password
 - /login password
+
+# Dependencies:
+
+- teleport plugin: https://dev.bukkit.org/projects/hoams
